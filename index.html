@@ -52,42 +52,6 @@
                 // Create a Date object for the receipt
                 var receiptDate = new Date();
 
-                // Create a Person object
-                function Person(name, age) {
-                    this.name = name;
-                    this.age = age;
-                }
-
-                // Arrow function as a member function
-                Person.prototype.displayDetails = () => {
-                    console.log(`Name: ${this.name}, Age: ${this.age}`);
-                };
-
-                var person = new Person("John Doe", 30);
-
-                // Display person details
-                person.displayDetails();
-
-                // Create a Student class inheriting from Person
-                class Student extends Person {
-                    constructor(name, age, rollNo) {
-                        super(name, age);
-                        this.rollNo = rollNo;
-                    }
-
-                    // Override displayDetails method
-                    displayDetails() {
-                        console.log(`Name: ${this.name}, Age: ${this.age}, Roll No: ${this.rollNo}`);
-                    }
-                }
-
-                // Demonstrate super and overriding
-                var student = new Student("Alice Smith", 25, "A123");
-
-                // Display student details
-                student.displayDetails();
-
-                // Generate receipt
                 var receipt = `
                     Order Receipt:
                     Tagline: ${tagline}
