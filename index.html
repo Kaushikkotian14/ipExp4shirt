@@ -29,7 +29,8 @@
                 return false;
             }
             
-            var phoneRegex = /^[0-9]{10}$/;
+            var phoneRegex = /^(\+91[\-\s]?)?[789]\d{9}$/;
+
             if (!phoneRegex.test(phoneNumber)) {
                 alert("Invalid phone number. Please enter a 10-digit Indian phone number.");
                 return false;
